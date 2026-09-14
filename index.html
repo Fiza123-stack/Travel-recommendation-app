@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wayfarer Travel — Find Your Next Trip</title>
+  <meta name="description" content="Search beach, temple, and country recommendations for your next trip.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Wayfarer<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <p class="kicker">Wayfarer Travel Recommendations</p>
+      <h1>Where to next, wanderer?</h1>
+      <p class="lede">
+        Wayfarer is a travel recommendation guide built to help you shortlist your next trip fast.
+        Search by type — beach, temple, or country — or just type a place name, and browse curated
+        picks complete with photos, so you can compare destinations before you commit to a booking.
+      </p>
+    </div>
+  </header>
+
+  <section class="search-panel">
+    <div class="container">
+      <div class="search-row">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Try 'beach', 'temple', 'country', or a place name like Japan..."
+          aria-label="Search destinations"
+        >
+        <button class="btn btn-primary" id="searchBtn" type="button">Search</button>
+        <button class="btn btn-ghost" id="resetBtn" type="button">Reset</button>
+      </div>
+      <p class="search-hint">Showing all destinations by default. Search narrows the list below.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Recommended for you</h2>
+        <span class="tag">beaches &middot; temples &middot; countries</span>
+      </div>
+      <div class="card-grid" id="results">
+        <!-- Populated by js/script.js -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>&copy; 2026 Wayfarer Travel. Final project demo site.</span>
+      <span><a href="about.html">About</a> &nbsp;&bull;&nbsp; <a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

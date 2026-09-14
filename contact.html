@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Wayfarer Travel</title>
+  <meta name="description" content="Get in touch with the Wayfarer Travel team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Wayfarer<span>.</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding: 60px 0 50px;">
+    <div class="container">
+      <p class="kicker">Get in touch</p>
+      <h1>Questions, tips, or a destination we missed?</h1>
+      <p class="lede">
+        Send us a message and we'll get back to you within two business days. For destination
+        suggestions, tell us the name and what makes it worth the trip.
+      </p>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Send a message</h2>
+        <form id="contactForm">
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Traveler" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Destination suggestion">
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-msg" id="formMsg"></p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Other ways to reach us</h2>
+        <div class="info-item">
+          <div class="label">Email</div>
+          <div>hello@wayfarertravel.example</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Office</div>
+          <div>14 Harbor Row, Lisbon, Portugal</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Hours</div>
+          <div>Monday–Friday, 9am–6pm WET</div>
+        </div>
+        <div class="info-item">
+          <div class="label">Social</div>
+          <div>@wayfarertravel on every platform that still lets you post photos</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>&copy; 2026 Wayfarer Travel. Final project demo site.</span>
+      <span><a href="index.html">Home</a> &nbsp;&bull;&nbsp; <a href="about.html">About</a></span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
